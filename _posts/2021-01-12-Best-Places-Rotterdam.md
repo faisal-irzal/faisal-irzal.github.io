@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Finding Prime Numbers with Python
+title: Finding the best places to live in Rotterdam
 image: "/posts/Rotterdam-GettyImages.jpg"
 tags: [Python, API web scraper, Geoencoder, KMeans]
 ---
