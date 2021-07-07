@@ -124,3 +124,23 @@ From above image we observed the following:
   - Rotterdam residential areas quite far from hustle-bustle areas with moderate number of daily essential stores
   - Less access to public transport
   - Surrounded by nature
+
+---
+
+### Results & Conclusion
+
+* Data have been acquired to build a guideline of finding best neighborhoods to live in Rotterdam
+* Criteria have been set for the neighborhood selection
+* Cluster analysis has been conducted to analyze neighborhoods based on the selection criteria (location, population density, average house price, percentage of new houses in the area)
+* From the analysis we conclude that neighborhoods in Cluster 2 may be the best fit for the given criteria because:
+  - affordable house price
+  - moderate availability of new building
+  - not that densely populated
+  - close vicinity to nature
+* Neighborhood’s examples from Cluster 2 are Hillegersberg Zuid, Agniesebuurt and Oosterflank.
+
+### References 
+
+[1] https://en.wikipedia.org/wiki/Rotterdam
+[2] https://www.pdok.nl/datasets
+
