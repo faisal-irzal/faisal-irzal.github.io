@@ -78,6 +78,8 @@ Clustering analysis has been performed on the dataset. Here, neighborhoods of Ro
 
 ![K-Elbow!](../img/posts/K-Elbow.jpg "K-Elbow")
 
+From above graph we observed that optimum k is 3. By setting k=3, the label of each neighborhood is calculated and analysed. 
 
+#### Data Analysis - Population Density
 
 
