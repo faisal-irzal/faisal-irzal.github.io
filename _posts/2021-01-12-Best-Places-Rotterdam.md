@@ -11,7 +11,7 @@ Let's get into it!
 
 ---
 
-## Introduction: Business Problem 
+### Introduction: Business Problem 
 
 Rotterdam is well-known as a major logistic and economic center and has Europe's largest seaport. It is the 2nd largest city and minicipality in The Netherlands. With a population of more than 650,000 living in an area of 324 km2, Rotterdam is known for its university, riverside setting, lively culture life, maritime heritage and modern culture, and not to forget, it is a home to over 180 nationalities [1].
 
