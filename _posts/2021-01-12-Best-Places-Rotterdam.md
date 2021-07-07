@@ -84,10 +84,43 @@ From above graph we observed that optimum k is 3. By setting k=3, the label of e
 
 ![PopDens](/img/posts/podens.jpg "Population Density")
 
+From above image we observed the following:
+* Neighborhoods around Rotterdam Central Station and high streets of Rotterdam are densely populated
+* South and North East Rotterdam neighborhoods have moderate population
+* Neighborhoods along the Rotter river and at the vicinity of the harbor have low population due to designated industrial area
+
 #### Percentage of New Buildings
 
 ![NewBuild](/img/posts/newbild.jpg "Percentage of New Buildings")
 
+From above image we observed the following:
+* New residential buildings are concentrated in few areas in the north east of Rotterdam
+* Moderate numbers of new buildings are spread in the center of Rotterdam
+
 #### Average Housing Price
 
 ![HousePrice](/img/posts/houseprice.jpg "Average Housing Price")
+
+From above image we observed the following:
+* Hig price houses are located in the north of Rotterdam; places surrounded by nature (i.e. forest lake)
+* Low price houses are located along the canal and at the vicinity of the harbor due to industrial area / non-residential areas
+
+#### Venue Types in Neighborhoods
+
+![VenueTypes](/img/posts/venuetype.jpg "Venue Types in Neighborhoods")
+
+From above image we observed the following:
+* Cluster 0
+  - Rotterdam busiest neighborhoods where highstreets of Rotterdam are located with lots of available daily essential stores
+  - Easy access to public transport
+  - Typically not surrounded by nature
+
+* Cluster 1
+  - Rotterdam residential areas with available daily essential stores within reach of the houses
+  - Easy access to public transport
+  - Moderately surrounded by nature
+ 
+* Cluster 2
+  - Rotterdam residential areas quite far from hustle-bustle areas with moderate number of daily essential stores
+  - Less access to public transport
+  - Surrounded by nature
