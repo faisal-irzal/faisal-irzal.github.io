@@ -141,6 +141,6 @@ From above image we observed the following:
 
 ### References 
 
-[1] https://en.wikipedia.org/wiki/Rotterdam
-[2] https://www.pdok.nl/datasets
+* [1] https://en.wikipedia.org/wiki/Rotterdam
+* [2] https://www.pdok.nl/datasets
 
