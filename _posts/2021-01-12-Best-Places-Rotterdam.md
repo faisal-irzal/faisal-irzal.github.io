@@ -62,7 +62,7 @@ Foursquare API provided me the opportunity to know about the venue category of e
 
 Taking into account the points above, the total number of selected venues in the neighborhoods is reduced to 357. Total number of venues in neighborhoods that mached our criteria can be visualized as per below barchart.
 
-![BarChart!](../img/posts/NmbrVenues.jpg "BarChart")
+![BarChart](../img/posts/NmbrVenues.jpg "BarChart")
 
 The above bar chart shows that some of the neighborhoods such Spangen, Tussendijken and Hillegersberg Noord return higher numbers of selected venues in the given geospatial coordinates. That means these neighborhoods may match our selected categories.
 
@@ -76,7 +76,7 @@ Having said that, all data is loaded into a data frame and ready to be analysed.
 
 Clustering analysis has been performed on the dataset. Here, neighborhoods of Rotterdam will be partitioned into subsets that have similar characteristics. One of the algorithms that can be used for clustering is K-Means method. This method can group data based on the similarity of the objects to each other within the dataset. By selecting the criteria to be used as clusters, the optimum choice of cluster *k* can be achieved by using K-Elbow method as seen below graph.
 
-![K-Elbow!](../img/posts/K-Elbow.jpg "K-Elbow")
+![K-Elbow](../img/posts/K-Elbow.jpg "K-Elbow")
 
 From above graph we observed that optimum k is 3. By setting k=3, the label of each neighborhood is calculated and analysed. 
 
