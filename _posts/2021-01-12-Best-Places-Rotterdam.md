@@ -17,43 +17,31 @@ Rotterdam is well-known as a major logistic and economic center and has Europe's
 
 Having a plan to look for real estate in Rotterdam, I decided to analyse Rotterdam for this project. I am particularly interested in having the knowledge of where the best place to live in this city. In my opinion, the best place to live can be defined as the neighborhood which:
 
-is residential area surrounded by nature, e.g. park, forest, lake
-is within reach to daily essential places e.g. market places, pharmacies, public transport
-lower population density; area with high population density is perceived low safety and environmental quality
-affordable housing price; price should be affordable for young families to get mortgage to finance the house
-more modern houses; assume that old houses might require renovation hence increase the cost
+1. is residential area surrounded by nature, e.g. park, forest, lake
+2. is within reach to daily essential places e.g. market places, pharmacies, public transport
+3. lower population density; area with high population density is perceived low safety and environmental quality
+4. affordable housing price; price should be affordable for young families to get mortgage to finance the house
+5. more modern houses; assume that old houses might require renovation hence increase the cost
+
 I understood that the criteria above may not reflect bigger population. However, in my opinion, the above categories could fit the stakeholders who just start their professional career.
 
 This assignment will showcase data science tools and knowledge I have gained to generate a few most promising neighborhoods based on the above criteria. Advantages of each area will then be clearly expressed so that best possible final location can be chosen by stakeholders.
 
-
 ---
 
-###### Important Note: Using pop() on a Set in Python
+### Data 
+Based on definition of the problem, factors that may influence stakeholder's decision are:
 
-In the real world - we would need to make a consideration around the pop() method when used on a Set as in some cases it can be a bit inconsistent.
+* location
+* population density
+* average house price
+* age of the house
 
-The pop() method will usually extract the lowest element of a Set. Sets however are, by definition, unordered. The items are stored internally with some order, but this internal order is determined by the hash code of the key (which is what allows retrieval to be so fast). 
+The following data sources will be neede to extract and generate the required information:
 
-This hashing method means that we can't 100% rely on it successfully getting the lowest value. In very rare cases, the hash provides a value that is not the lowest.
+* list of neighborhoods in Rotterdam, its population density, age of houses in the area and the average house prices can be obtained from PDOK, a data platform for accessing geo data sets of Dutch governments [2]
+* number of venues, their type and location in every neighborhood will be obtained using Foursquare API
+* geospatial coordinate of neighborhoods in Rotterdam will be obtained by using Geocoder Python package
 
-Even though here, we're just coding up something fun - it is most definitely a useful thing to note when using Sets and pop() in Python in the future!
-
-The simplest solution to force the minimum value to be used is to replace the line...
-
-```ruby
-prime = number_range.pop()
-```
-
-...with the lines...
-
-```ruby
-prime = min(sorted(number_range))
-number_range.remove(prime)
-```
-
-...where we firstly force the identification of the lowest number in the number_range into our prime variable, and following that we remove it.
-
-However, because we have to sort the list for each iteration of the loop in order to get the minimum value, it's slightly slower than what we saw with pop()!
 
 
