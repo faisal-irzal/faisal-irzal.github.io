@@ -62,6 +62,7 @@ Foursquare API provided me the opportunity to know about the venue category of e
 
 Taking into account the points above, the total number of selected venues in the neighborhoods is reduced to 357. Total number of venues in neighborhoods that mached our criteria can be visualized as per below barchart.
 
+![BarChart!](/posts/NmbrVenues.jpg "BarChart")
 
 Having said that, all data is loaded into a data frame and ready to be analysed.
 
