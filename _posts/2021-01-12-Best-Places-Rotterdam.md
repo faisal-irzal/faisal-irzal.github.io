@@ -80,6 +80,14 @@ Clustering analysis has been performed on the dataset. Here, neighborhoods of Ro
 
 From above graph we observed that optimum k is 3. By setting k=3, the label of each neighborhood is calculated and analysed. 
 
-#### Data Analysis - Population Density
+#### Population Density
 
+![PopDens](/img/posts/popdens.jpg "Population Density")
 
+#### Percentage of New Buildings
+
+![NewBuild](/img/posts/newbild.jpg "Percentage of New Buildings")
+
+#### Average Housing Price
+
+![HousePrice](/img/posts/houseprice.jpg "Average Housing Price")
