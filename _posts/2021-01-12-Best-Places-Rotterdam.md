@@ -82,7 +82,7 @@ From above graph we observed that optimum k is 3. By setting k=3, the label of e
 
 #### Population Density
 
-![PopDens](/img/posts/popdens.jpg "Population Density")
+![PopDens](/img/posts/podens.jpg "Population Density")
 
 #### Percentage of New Buildings
 
