@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Finding the best places to live in Rotterdam
+title: Best Places to Live in Rotterdam
 image: "/posts/Rotterdam-GettyImages.jpg"
 tags: [Python, API web scraper, Geoencoder, KMeans]
 ---
 
-In this post I'm going to run through a function in Python that can quickly find all the Prime numbers below a given value.  For example, if I passed the function a value of 100, it would find all the prime numbers below 100!
-
-If you're not sure what a Prime number is, it is a number that can only be divided wholly by itself and one so 7 is a prime number as no other numbers apart from 7 or 1 divide cleanly into it 8 is not a prime number as while eight and one divide into it, so do 2 and 4
+This is basically the Capstone Project I developed in December 2020 as requirement to get the IBM Data Science Professional Certificate on Coursera, the program which has provided me a strong foundation to pivot to Data Science field. The subject is so dear to me due to many reasons. Not only because Rotterdam is one of my favorite's city in the world; the people, the vibe, the architecture; but also the concerns we have in the society about how difficult it is to find to best place to live in the hustle-bustle of big cities. This project I hope will shine a light to young professionals with limited budget who want to find the best place to call it a home in the-what-so-called, *the Manhattan at the Meuse*.
 
 Let's get into it!
 
