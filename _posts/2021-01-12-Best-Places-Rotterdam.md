@@ -64,13 +64,19 @@ Taking into account the points above, the total number of selected venues in the
 
 ![BarChart!](/posts/NmbrVenues.jpg "BarChart")
 
+The above bar chart shows that some of the neighborhoods such Spangen, Tussendijken and Hillegersberg Noord return higher numbers of selected venues in the given geospatial coordinates. That means these neighborhoods may match our selected categories.
+
+The result may reflect all the possible venues in the neighborhoods captured by Foursquare. The results, oboviously, heavily depends on the information given by the Foursquare users including its geospatial coordinates of latitude and longitude. In this case, for given latitude and longitude of a neighborhood, the system will try to find venues within 750m-vicinity of the neighborhood. Depending on the distance between neighborhoods, one venue may be included in more neighborhoods.
+
 Having said that, all data is loaded into a data frame and ready to be analysed.
 
 ---
 
 ### Data Analysis
 
+Clustering analysis has been performed on the dataset. Here, neighborhoods of Rotterdam will be partitioned into subsets that have similar characteristics. One of the algorithms that can be used for clustering is K-Means method. This method can group data based on the similarity of the objects to each other within the dataset. By selecting the criteria to be used as clusters, the optimum choice of cluster *k* can be achieved by using K-Elbow method as seen below graph.
 
+![K-Elbow!](/posts/K-Elbow.jpg "K-Elbow")
 
 
 
