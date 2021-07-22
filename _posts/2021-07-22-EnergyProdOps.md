@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Energy Production Optimization Based on Market Demand
+title: Market-based Energy Production Optimization
 image: "/posts/PowerStation.jpg"
 tags: [Python, H2O AutoML, Energy Demand, Production Optimization]
 ---
 
-Several machine learning algorithms will be demonstrated to predict electrical power output from a power plant based on plant operation features. The outcome of the algorithms will be used to recommend some exemplary energy market actions.
+Several machine learning models will be demonstrated in this post to predict electrical energy production from a power plant based on environmental and control features. Exploratory Data Analysis will be conducted to find correlations of each features to the target variable. Results of the trained models will be compared and the best model will be further used to recommend some exemplary energy market actions.
 
 ---
 
