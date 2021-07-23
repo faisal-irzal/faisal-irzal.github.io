@@ -23,7 +23,9 @@ This case study aims to model the energy generated as a function of the exhaust 
 The datasets used for this case study are:
 - Combined cycle powerplant data from [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant)
 
-  This dataset contains 9568 data points collected from a combined cycle powerplant over 6 years, where the power plant was set to work with full load. Hour data were collected for Average Ambient Temperature (T[degC]), Exhaust Vacuum** (V[cm Hg]), Ambient Pressure (AP[mbar]), Relative Humidity (RH[%]), and Net Electrical Energy Output (EP[MW]). For demonstration purpose, powerplant data has been modified with an artificial datetime variable. 
+  This dataset contains 9568 data points collected from a combined cycle powerplant over 6 years, where the power plant was set to work with full load. Hour data were collected for Average Ambient Temperature (**T[degC]**), Exhaust Vacuum (**V[cm Hg]**), Ambient Pressure (**AP[mbar]**), Relative Humidity (**RH[%]**), and Net Electrical Energy Output (**EP[MW]**). For the purpose of this case study, the powerplant data has been modified by adding a mockup datetime variable. The first five rows of the power plant data can be seen as per below table.
+  
+  
 
 - Pool price forecast data from [AESO](http://ets.aeso.ca/) 
 
