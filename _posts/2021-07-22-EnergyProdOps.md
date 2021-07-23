@@ -29,8 +29,9 @@ The datasets used for this case study are:
 
 - Pool price forecast data from [AESO](http://ets.aeso.ca/) 
 
+Pool price forecast data from AESO will be used for the time market analysis, which is from 2021-07-06 to 2021-07-12. The data contains forecast and actual value of the pool price ($/MWH) and the Alberta Internal Load (AIL), which is the demand of energy (MW) at the hour. The forecast of pool price is made two hours prior to the listed time. The pool price forecast data looks like as per below table. 
 
-
+![PoolPriceData](/img/posts/PoolPriceData.jpg "PoolPriceData")  
 ---
 
 ### Data Analysis
