@@ -35,8 +35,7 @@ Pool price forecast dataset from AESO containing 168 data points will be used fo
 
 To conduct the initial data exploration, pandas-profiling library is used for generating basic insights. The library works with pandas dataframe and can provide quick and basic exploratory data analysis. Below graph shows Pearson's correlation between the features, i.e. a measure of linear correlation between two features.
 
-Pearsons_cor.jpg
-
+![Pearsons_cor](/img/posts/Pearsons_cor.jpg "PC")
 
 ---
 
