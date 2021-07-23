@@ -23,7 +23,7 @@ This case study aims to model the energy generated as a function of the exhaust 
 The datasets used for this case study are:
 - Combined cycle powerplant data from [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant)
 
-  This dataset contains 9568 data points collected from a combined cycle powerplant over 6 years, where the power plant was set to work with full load. Hour data were collected for Average Ambient Temperature (**T[degC]**), Exhaust Vacuum (**V[cm Hg]**), Ambient Pressure (**AP[mbar]**), Relative Humidity (**RH[%]**), and Net Electrical Energy Output (**EP[MW]**). For the purpose of this case study, the powerplant data has been modified by adding a mockup datetime variable. 
+  This dataset contains 9568 data points collected from a combined cycle powerplant over 6 years, where the power plant was set to work with full load. Hour data were collected for Average Ambient Temperature (**T[degC]**), Exhaust Vacuum (**V[cm Hg]**), Ambient Pressure (**AP[mbar]**), Relative Humidity (**RH[%]**), and Net Electrical Power Output (**EP[MW]**). For the purpose of this case study, the powerplant data has been modified by adding a mockup datetime variable. 
 
 - Pool price forecast data from [AESO](http://ets.aeso.ca/) 
 
@@ -33,13 +33,20 @@ Pool price forecast dataset from AESO containing 168 data points will be used fo
 
 ### Data Exploration & Analysis
 
-To conduct the initial data exploration, pandas-profiling library is used for generating basic insights. The library works with pandas dataframe and can provide quick and basic exploratory data analysis. Below graph shows Pearson's correlation between the features, i.e. a measure of linear correlation between two features.
+To conduct the initial data exploration, pandas-profiling library is used for generating basic insights. The library works with pandas dataframe and can provide quick and basic exploratory data analysis. Below graph shows Pearson's correlation between the features in the combined cycle power plant data. 
 
 ![Pearsons_cor](/img/posts/Pearsons_cor.jpg "PC")
+
+Pearson's correlation measures the linear correlation between two features. Its value lies between -1 and +1, where -1 indicates total negative linear correlation while +1 indicates total positive linear correlation. From the result above we observes that the average ambient temperature **(T[degC])** and the exhaust vacuum **(V[cm Hg])** have negative correlation with the target variable, i.e. Electrical Power Output (**EP[MW]**). On the other hand, Ambient Pressure (**AP[mbar]**) and Relative Humidity (**RH[%]**) have insignificant positive correlation. The presented data is in aligned with reference made in some literatures [1] stating that power output will be reduced by a percentage between 5 to 10 percent for every 10 degC increase in ambient air temperature. 
+
 
 ---
 
 ### Results & Conclusion
 
+---
 
+### Reference
+
+[1] Kakaras, E. (2006) , Inlet Air Cooling Methods for Gas Turbine Based Power Plant, ASME vol.128, pp. 312-317.
 
