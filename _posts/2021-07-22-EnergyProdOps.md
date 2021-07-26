@@ -41,7 +41,7 @@ To conduct the initial data exploration, pandas-profiling library is used for ge
 
 <table>
   <tr>
-    <td> <p align="center">  **Power Plant Data** </p> </td>
+    <td> <p align="center">  Power Plant Data </p> </td>
     <td> <p align="center">  Market Forecast Data </p> </td>
   </tr>
   <tr>
@@ -50,9 +50,11 @@ To conduct the initial data exploration, pandas-profiling library is used for ge
   </tr>
 </table>
 
-Pearson's correlation measures the linear correlation between two features. Its value lies between -1 and +1, where -1 indicates total negative linear correlation while +1 indicates total positive linear correlation. From the result above we observes that the average ambient temperature **(T[degC])** and the exhaust vacuum **(V[cm Hg])** have negative correlation with the target variable, i.e. Electrical Power Output (**EP[MW]**). On the other hand, Ambient Pressure (**AP[mbar]**) and Relative Humidity (**RH[%]**) have insignificant positive correlation. The presented data is in aligned with reference made in some literatures [1] stating that power output will be reduced by a percentage between 5 to 10 percent for every 10 degC increase in ambient air temperature. 
+Pearson's correlation measures the linear correlation between two features. Its value lies between -1 and +1, where -1 indicates total negative linear correlation while +1 indicates total positive linear correlation. 
 
-Linear correlation between features in the market forecast data can be found on below graph. Here, 
+From the graph on the left side above we observes that the average ambient temperature **(T[degC])** and the exhaust vacuum **(V[cm Hg])** have negative correlation with the target variable, i.e. Electrical Power Output (**EP[MW]**). On the other hand, Ambient Pressure (**AP[mbar]**) and Relative Humidity (**RH[%]**) have insignificant positive correlation. The presented data is in aligned with reference made in some literatures [1] stating that power output will be reduced by a percentage between 5 to 10 percent for every 10 degC increase in ambient air temperature. 
+
+The graph on the right side gives us insights that indeed the actual market price has strong correlation with the forecasted pool price and it corresponds with the forecasted & actual demand of energy (AIL) at the hour.
 
 ---
 
