@@ -41,12 +41,12 @@ To conduct the initial data exploration, pandas-profiling library is used for ge
 
 <table>
   <tr>
-    <td> <p align="center"> <img src="/img/posts/Pearsons_cor.jpg"> </p> </td> 
-    <td> <p align="center"> <img src="/img/posts/AESO_Pearsons.jpg"> </p> </td> 
-  </tr>
-  <tr>
     <td> <p align="center">  Power Plant Data </p> </td>
     <td> <p align="center">  Market Forecast Data </p> </td>
+  </tr>
+  <tr>
+    <td> <p align="center"> <img src="/img/posts/Pearsons_cor.jpg"> </p> </td> 
+    <td> <p align="center"> <img src="/img/posts/AESO_Pearsons.jpg"> </p> </td> 
   </tr>
 </table>
 
