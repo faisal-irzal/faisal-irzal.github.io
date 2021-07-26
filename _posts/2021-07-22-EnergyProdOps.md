@@ -37,11 +37,11 @@ Pool price forecast dataset from AESO containing 168 data points will be used fo
 
 ### Data Exploration & Analysis
 
-To conduct the initial data exploration, pandas-profiling library is used for generating basic insights. The library works with pandas dataframe and can provide quick and basic exploratory data analysis. Below graph shows Pearson's correlation between the features in the combined cycle power plant data. 
+To conduct the initial data exploration, pandas-profiling library is used for generating basic insights. The library works with pandas dataframe and can provide quick and basic exploratory data analysis. Below graph shows **Pearson's Correlation** between the features in the Combined Cycle Power Plant data as well as Market Forecast Data. 
 
 <table>
   <tr>
-    <td> <p align="center">  Power Plant Data </p> </td>
+    <td> <p align="center">  **Power Plant Data** </p> </td>
     <td> <p align="center">  Market Forecast Data </p> </td>
   </tr>
   <tr>
