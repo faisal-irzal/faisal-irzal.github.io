@@ -68,7 +68,11 @@ Next, the AutoML Leaderboard is observed. Since a leaderboard frame was not spec
 
 A default performance metric for each machine learning task (binary classification, multiclass classification, regression) is specified internally and the leaderboard will be sorted by that metric. In the case of regression, the default ranking metric is mean residual deviance. In the future, the user will be able to specify any of the H2O metrics so that different metrics can be used to generate rankings on the leaderboard. The top models resulting from the training by H2O AutoML can be found as per below table.
 
-
+<table>
+  <tr>
+    <td> <p align="center"> <img src="/img/posts/MLtopmodels.jpg"> </p> </td> 
+  </tr>
+</table>
 
 ---
 
