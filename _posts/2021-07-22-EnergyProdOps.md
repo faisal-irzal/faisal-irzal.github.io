@@ -26,9 +26,9 @@ This Notebook will focus on a combined cycle power plant, which consists of gas 
 The datasets used for this case study are:
 - Combined cycle powerplant data from [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant)
 
-  This dataset contains 9568 data points collected from a combined cycle powerplant over 6 years, where the power plant was set to work with full load. Hour data were collected for Average Ambient Temperature (**T[degC]**), Exhaust Vacuum (**V[cm Hg]**), Ambient Pressure (**AP[mbar]**), Relative Humidity (**RH[%]**), and Net Electrical Power Output (**EP[MW]**). For the purpose of this case study, the powerplant data has been modified by adding a mockup datetime variable. 
+  This dataset contains 9568 data points collected from a combined cycle powerplant over 6 years, where the power plant was set to work with full load. Hour data were collected for Average Ambient Temperature (**T[degC]**), Exhaust Vacuum (**V[cm Hg]**), Ambient Pressure (**AP[mbar]**), Relative Humidity (**RH[%]**), and Net Electrical Power Output (**EP[MW]**). For the purpose of the study, the powerplant data has been modified by adding a mockup datetime variable. 
 
-- Pool price forecast data from [AESO](http://ets.aeso.ca/) 
+- Pool price (market) forecast data from [AESO](http://ets.aeso.ca/) 
 
 Pool price forecast dataset from AESO containing 168 data points will be used for the time market analysis, which is from 2021-07-06 to 2021-07-12. The data contains forecast and actual value of the pool price ($/MWH) and the Alberta Internal Load (AIL), which is the demand of energy (MW) at the hour. The forecast of pool price is made two hours prior to the listed time. This dataset will later be used to estimate cost/profit impacted by selected action by energy supplier.
 
@@ -44,6 +44,7 @@ To conduct the initial data exploration, pandas-profiling library is used for ge
 
 Pearson's correlation measures the linear correlation between two features. Its value lies between -1 and +1, where -1 indicates total negative linear correlation while +1 indicates total positive linear correlation. From the result above we observes that the average ambient temperature **(T[degC])** and the exhaust vacuum **(V[cm Hg])** have negative correlation with the target variable, i.e. Electrical Power Output (**EP[MW]**). On the other hand, Ambient Pressure (**AP[mbar]**) and Relative Humidity (**RH[%]**) have insignificant positive correlation. The presented data is in aligned with reference made in some literatures [1] stating that power output will be reduced by a percentage between 5 to 10 percent for every 10 degC increase in ambient air temperature. 
 
+Linear correlation between features in the market forecast data can be found on below graph. Here, 
 
 ---
 
