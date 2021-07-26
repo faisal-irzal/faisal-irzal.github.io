@@ -9,7 +9,7 @@ Several machine learning models will be demonstrated in this post to predict ele
 
 ---
 
-### Introduction: Business Problem 
+### Introduction to Business Problem 
 
 To ensure a steady supply of electricity to consumers, energy suppliers owning a power plant should produce and supply the right amount of electricity on the grid at every moment to instantaneously meet and balance electricity demand. To this end, it is important for them to know in advance how much power output they can produce by taking into account certain parameters, and how much the current market price in such way they can maximize the profit of selling the produced electric power.
 
@@ -55,6 +55,20 @@ Pearson's correlation measures the linear correlation between two features. Its 
 From the graph on the left side above we observes that the average ambient temperature **(T[degC])** and the exhaust vacuum **(V[cm Hg])** have negative correlation with the target variable, i.e. Electrical Power Output (**EP[MW]**). On the other hand, Ambient Pressure (**AP[mbar]**) and Relative Humidity (**RH[%]**) have insignificant positive correlation. The presented data is in aligned with reference made in some literatures [1] stating that power output will be reduced by a percentage between 5 to 10 percent for every 10 degC increase in ambient air temperature. 
 
 The graph on the right side gives us insights that indeed the actual market price has strong correlation with the forecasted pool price and it corresponds with the forecasted & actual demand of energy (AIL) at the hour.
+
+---
+
+### ML Model Development
+
+For demonstration, H2O AutoML will be utilized to help us fast track the implementation and evaluation of Machine Learning algorithms. AutoML is a function in H2O.ai cloud platform that automates the process of building a large number of models, with the goal of finding the "best" model without any prior knowledge. 
+
+To begin, the H2O Python model is importend and H2OAutoML class is initialized in a local H2O cluster. Power plant data is then imported to H2) dataframe to conduct the analysis, by taking into account features and target (**EP[MW]**) variable and 80 to 20 ratio of training and test data.
+
+Next, we will view the AutoML Leaderboard. Since we did not specify a leaderboard_frame in the H2OAutoML.train() method for scoring and ranking the models, the AutoML leaderboard uses the cross validated metrics to rank the models.
+
+A default performance metric for each machine learning task (binary classification, multiclass classification, regression) is specified internally and the leaderboard will be sorted by that metric. In the case of regression, the default ranking metric is mean residual deviance. In the future, the user will be able to specify any of the H2O metrics so that different metrics can be used to generate rankings on the leaderboard. The top models resulting from the training by H2O AutoML can be found as per below table.
+
+
 
 ---
 
