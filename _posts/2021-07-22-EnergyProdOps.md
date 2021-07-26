@@ -25,7 +25,7 @@ This Notebook will focus on a combined cycle power plant, which consists of gas 
 ### Data Acquisition
 
 The datasets used for this case study are:
-- Combined cycle powerplant data from [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant)
+- Combined cycle power plant data from [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant)
 
   This dataset contains 9568 data points collected from a combined cycle powerplant over 6 years, where the power plant was set to work with full load. Hour data were collected for Average Ambient Temperature (**T[degC]**), Exhaust Vacuum (**V[cm Hg]**), Ambient Pressure (**AP[mbar]**), Relative Humidity (**RH[%]**), and Net Electrical Power Output (**EP[MW]**). For the purpose of the study, the powerplant data has been modified by adding a mockup datetime variable. 
 
@@ -45,8 +45,8 @@ To conduct the initial data exploration, pandas-profiling library is used for ge
     <td> <p align="center"> <img src="/img/posts/AESO_Pearsons.jpg"> </p> </td> 
   </tr>
   <tr>
-    <td>Powerplant Data</td>
-    <td>Market Forecast Data</td>
+    <td> <p align="center">  Power Plant Data </p> </td>
+    <td> <p align="center">  Market Forecast Data </p> </td>
   </tr>
 </table>
 
