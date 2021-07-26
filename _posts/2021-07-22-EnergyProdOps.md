@@ -5,7 +5,7 @@ image: "/posts/PowerStation.jpg"
 tags: [Python, H2O AutoML, Energy Demand, Production Optimization]
 ---
 
-Several machine learning models will be demonstrated in this post to predict electricity production from a power plant based on environmental and control features. Exploratory Data Analysis will be conducted to find correlations of each features to the target variable. Results of the trained models will be compared and the best model will be further used to recommend some exemplary energy market actions.
+Several machine learning (ML) models will be demonstrated in this post to predict electricity production from a power plant based on environmental and control features. Exploratory Data Analysis will be conducted to find correlations of each features to the target variable. Results of the trained models will be compared and the best model will be further used to recommend some exemplary energy market actions.
 
 ---
 
@@ -64,7 +64,7 @@ For demonstration, H2O AutoML will be utilized to help us fast track the impleme
 
 To begin, the H2O Python model is importend and H2OAutoML class is initialized in a local H2O cluster. Power plant data is then imported to H2) dataframe to conduct the analysis, by taking into account features and target (**EP[MW]**) variable and 80 to 20 ratio of training and test data.
 
-Next, we will view the AutoML Leaderboard. Since we did not specify a leaderboard_frame in the H2OAutoML.train() method for scoring and ranking the models, the AutoML leaderboard uses the cross validated metrics to rank the models.
+Next, the AutoML Leaderboard is observed. Since a leaderboard frame was not specified in the H2OAutoML.train() method for scoring and ranking the models, the AutoML leaderboard uses the cross validation metrics to rank the models.
 
 A default performance metric for each machine learning task (binary classification, multiclass classification, regression) is specified internally and the leaderboard will be sorted by that metric. In the case of regression, the default ranking metric is mean residual deviance. In the future, the user will be able to specify any of the H2O metrics so that different metrics can be used to generate rankings on the leaderboard. The top models resulting from the training by H2O AutoML can be found as per below table.
 
