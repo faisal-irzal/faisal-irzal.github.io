@@ -39,12 +39,16 @@ Pool price forecast dataset from AESO containing 168 data points will be used fo
 
 To conduct the initial data exploration, pandas-profiling library is used for generating basic insights. The library works with pandas dataframe and can provide quick and basic exploratory data analysis. Below graph shows Pearson's correlation between the features in the combined cycle power plant data. 
 
-<table><tr>
+<table>
+  <tr>
     <td> <p align="center"> <img src="/img/posts/Pearsons_cor.jpg"> </p> </td> 
     <td> <p align="center"> <img src="/img/posts/AESO_Pearsons.jpg"> </p> </td> 
-    <td> **Powerplant Data** </td>
-    <td> **Market Forecast Data** </td>
-</tr></table>
+  </tr>
+  <tr>
+    <td>Powerplant Data</td>
+    <td>Market Forecast Data</td>
+  </tr>
+</table>
 
 Pearson's correlation measures the linear correlation between two features. Its value lies between -1 and +1, where -1 indicates total negative linear correlation while +1 indicates total positive linear correlation. From the result above we observes that the average ambient temperature **(T[degC])** and the exhaust vacuum **(V[cm Hg])** have negative correlation with the target variable, i.e. Electrical Power Output (**EP[MW]**). On the other hand, Ambient Pressure (**AP[mbar]**) and Relative Humidity (**RH[%]**) have insignificant positive correlation. The presented data is in aligned with reference made in some literatures [1] stating that power output will be reduced by a percentage between 5 to 10 percent for every 10 degC increase in ambient air temperature. 
 
