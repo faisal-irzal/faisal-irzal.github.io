@@ -103,13 +103,13 @@ RMSLE: 0.007777808251346786
 Mean Residual Deviance: 12.537227343319831
 
 Variable Importances: 
-variable  relative_importance 	scaled_importance	  percentage
+variable  relative_importance scaled_importance percentage
 ----------------------------------------------------------------
-T[degC]   723487.250000	        1.000000	          0.650238
-V[cm Hg]	323361.218750	        0.446948	          0.290623
-AP[mbar]	36803.312500	        0.050869	          0.033077
-RH[%]	    21373.373047	        0.029542	          0.019209
-DateTime	7625.055176	          0.010539	          0.006853
+T[degC] 723487.250000 1.000000  0.650238
+V[cm Hg]  323361.218750 0.446948  0.290623
+AP[mbar]  36803.312500  0.050869  0.033077
+RH[%] 21373.373047  0.029542  0.019209
+DateTime  7625.055176 0.010539  0.006853
 
 
 ```
