@@ -71,9 +71,9 @@ A default performance metric for each machine learning task (binary classificati
 <td> <p align="center"> <img src="/img/posts/MLtopmodels.jpg"> </p> </td> 
 
 The top ranked model may not always be the best model for the selection. Often model selection needs to take into account the usability, resource consumption, run time, etc. Depending on the problem, it may need to use different error metrics as the representation of model's accuracy as well.
-Since this notebook is for demonstration of the general process, the top ranked model is chosen, .i.e. XGBoost. 
+Since this notebook is for demonstration of the general process, the top ranked model is chosen, .i.e. XGBoost model_5.  Details performance of the selected model is given below. 
 
-
+<td> <p align="center"> <img src="/img/posts/XGBoost5.jpg"> </p> </td> 
 
 ---
 
