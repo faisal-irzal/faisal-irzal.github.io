@@ -73,7 +73,35 @@ A default performance metric for each machine learning task (binary classificati
 The top ranked model may not always be the best model for the selection. Often model selection needs to take into account the usability, resource consumption, run time, etc. Depending on the problem, it may need to use different error metrics as the representation of model's accuracy as well.
 Since this notebook is for demonstration of the general process, the top ranked model is chosen, .i.e. XGBoost model_5.  Details performance of the selected model is given below. 
 
-<td> <p align="center"> <img src="/img/posts/XGBoost5.jpg"> </p> </td> 
+```ruby
+Model Details
+=============
+H2OXGBoostEstimator :  XGBoost
+Model Key:  XGBoost_grid__1_AutoML_20210727_081519_model_5
+
+
+Model Summary: 
+number_of_trees
+0		107.0
+
+ModelMetricsRegression: xgboost
+** Reported on train data. **
+
+MSE: 6.477688710682256
+RMSE: 2.54513039168571
+MAE: 1.864165068784334
+RMSLE: 0.0056074868253479454
+Mean Residual Deviance: 6.477688710682256
+
+ModelMetricsRegression: xgboost
+** Reported on cross-validation data. **
+
+MSE: 12.537227343319831
+RMSE: 3.540794733293619
+MAE: 2.5958651195348925
+RMSLE: 0.007777808251346786
+Mean Residual Deviance: 12.537227343319831
+```
 
 ---
 
