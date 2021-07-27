@@ -70,7 +70,7 @@ A default performance metric for each machine learning task (binary classificati
 
 ```ruby
 model_id	                                        mean_residual_deviance	rmse	    mse	      mae	      rmsle
-XGBoost_grid__1_AutoML_20210727_081519_model_5	  12.5372	                3.54079	  12.5372	  2.59587	  0.00777781
+XGBoost_grid__1_AutoML_20210727_081519_model_5    12.5372	                3.54079	  12.5372	  2.59587	  0.00777781
 GBM_3_AutoML_20210727_081519	                    13.3114	                3.64847	  13.3114	  2.68249	  0.00800494
 GBM_4_AutoML_20210727_081519	                    13.4503	                3.66746   13.4503   2.70689	  0.00804485
 XGBoost_grid__1_AutoML_20210727_081519_model_1	  13.6501	                3.6946	  13.6501	  2.62936	  0.00810377
