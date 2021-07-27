@@ -62,13 +62,18 @@ The graph on the right side gives us insights that indeed the actual market pric
 
 For demonstration, H2O AutoML will be utilized to help us fast track the implementation and evaluation of Machine Learning algorithms. AutoML is a function in H2O.ai cloud platform that automates the process of building a large number of models, with the goal of finding the "best" model without any prior knowledge. 
 
-To begin, the H2O Python model is importend and H2OAutoML class is initialized in a local H2O cluster. Power plant data is then imported to H2) dataframe to conduct the analysis, by taking into account features and target (**EP[MW]**) variable and 80 to 20 ratio of training and test data.
+To begin, the H2O Python model is importend and H2OAutoML class is initialized in a local H2O cluster. Power plant data is then imported to H2O dataframe to conduct the analysis, by taking into account features and target (**EP[MW]**) variable and 80 to 20 ratio of training and test data.
 
 Next, the AutoML Leaderboard is observed. Since a leaderboard frame was not specified in the H2OAutoML.train() method for scoring and ranking the models, the AutoML leaderboard uses the cross validation metrics to rank the models.
 
 A default performance metric for each machine learning task (binary classification, multiclass classification, regression) is specified internally and the leaderboard will be sorted by that metric. In the case of regression, the default ranking metric is mean residual deviance. In the future, the user will be able to specify any of the H2O metrics so that different metrics can be used to generate rankings on the leaderboard. The top models resulting from the training by H2O AutoML can be found as per below table.
 
 <td> <p align="center"> <img src="/img/posts/MLtopmodels.jpg"> </p> </td> 
+
+The top ranked model may not always be the best model for the selection. Often model selection needs to take into account the usability, resource consumption, run time, etc. Depending on the problem, it may need to use different error metrics as the representation of model's accuracy as well.
+Since this notebook is for demonstration of the general process, the top ranked model is chosen, .i.e. XGBoost. 
+
+
 
 ---
 
