@@ -110,6 +110,7 @@ Variable Importances:
 4	DateTime	7625.055176	        0.010539	        0.006853
 
 ```
+The variable importance feature of the H2O calculates the most relevant variable in the prediction. In this case the average ambient Temperature is the most relevant feature when it comes to prediction of the power plant output.
 
 The selected model will be validated on test data to see if any overfitting or underfitting exist. By using H2O AutoML object directly on the leader model we get the following performance
 
