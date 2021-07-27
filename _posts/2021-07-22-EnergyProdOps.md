@@ -68,21 +68,6 @@ Next, the AutoML Leaderboard is observed. Since a leaderboard frame was not spec
 
 A default performance metric for each machine learning task (binary classification, multiclass classification, regression) is specified internally and the leaderboard will be sorted by that metric. In the case of regression, the default ranking metric is mean residual deviance. In the future, the user will be able to specify any of the H2O metrics so that different metrics can be used to generate rankings on the leaderboard. The top models resulting from the training by H2O AutoML can be found as per below table.
 
-```ruby
-model_id	                                        mean_residual_deviance	rmse	    mse	      mae	      rmsle
-XGBoost_grid__1_AutoML_20210727_081519_model_5    12.5372	                3.54079	  12.5372	  2.59587	  0.00777781
-GBM_3_AutoML_20210727_081519	                    13.3114	                3.64847	  13.3114	  2.68249	  0.00800494
-GBM_4_AutoML_20210727_081519	                    13.4503	                3.66746   13.4503   2.70689	  0.00804485
-XGBoost_grid__1_AutoML_20210727_081519_model_1	  13.6501	                3.6946	  13.6501	  2.62936	  0.00810377
-GBM_1_AutoML_20210727_081519	                    13.662	                3.69621	  13.662	  2.73172	  0.00810954
-GBM_2_AutoML_20210727_081519	                    13.7798	                3.71212	  13.7798	  2.73967	  0.0081431
-XGBoost_grid__1_AutoML_20210727_081519_model_3	  13.8038	                3.71535	  13.8038	  2.75489	  0.00816563
-GBM_grid__1_AutoML_20210727_081519_model_2	      13.9029               	3.72866	  13.9029	  2.76399	  0.00817799
-GBM_grid__1_AutoML_20210727_081519_model_5	      14.0367	                3.74656	  14.0367	  2.768	    0.00822203
-XGBoost_grid__1_AutoML_20210727_081519_model_6	  14.1116	                3.75653	  14.1116	  2.77646	  0.00826141
-```
-
-
 <td> <p align="center"> <img src="/img/posts/MLtopmodels.jpg"> </p> </td> 
 
 The top ranked model may not always be the best model for the selection. Often model selection needs to take into account the usability, resource consumption, run time, etc. Depending on the problem, it may need to use different error metrics as the representation of model's accuracy as well.
