@@ -71,9 +71,47 @@ A default performance metric for each machine learning task (binary classificati
 <td> <p align="center"> <img src="/img/posts/MLtopmodels.jpg"> </p> </td> 
 
 The top ranked model may not always be the best model for the selection. Often model selection needs to take into account the usability, resource consumption, run time, etc. Depending on the problem, it may need to use different error metrics as the representation of model's accuracy as well.
-Since this notebook is for demonstration of the general process, the top ranked model is chosen, .i.e. XGBoost model_5. 
+Since this notebook is for demonstration of the general process, the top ranked model is selected, .i.e. XGBoost model_5. The details performance of the selected model is as follow.
 
-The chosen model will be validated on test data to see if any overfitting or underfitting exist. By using H2O AutoML object directly on the leader model we get the following performance
+```ruby
+Model Details
+=============
+H2OXGBoostEstimator :  XGBoost
+Model Key:  XGBoost_grid__1_AutoML_20210727_081519_model_5
+
+Model Summary: 
+number_of_trees
+0		107.0
+
+ModelMetricsRegression: xgboost
+** Reported on train data. **
+
+MSE: 6.477688710682256
+RMSE: 2.54513039168571
+MAE: 1.864165068784334
+RMSLE: 0.0056074868253479454
+Mean Residual Deviance: 6.477688710682256
+
+ModelMetricsRegression: xgboost
+** Reported on cross-validation data. **
+
+MSE: 12.537227343319831
+RMSE: 3.540794733293619
+MAE: 2.5958651195348925
+RMSLE: 0.007777808251346786
+Mean Residual Deviance: 12.537227343319831
+
+Variable Importances: 
+variable	relative_importance	scaled_importance	percentage
+0	T[degC]	723487.250000	1.000000	0.650238
+1	V[cm Hg]	323361.218750	0.446948	0.290623
+2	AP[mbar]	36803.312500	0.050869	0.033077
+3	RH[%]	21373.373047	0.029542	0.019209
+4	DateTime	7625.055176	0.010539	0.006853
+
+```
+
+The selected model will be validated on test data to see if any overfitting or underfitting exist. By using H2O AutoML object directly on the leader model we get the following performance
 
 ```ruby
 ModelMetricsRegression: xgboost
