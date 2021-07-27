@@ -81,9 +81,8 @@ Model Key:  XGBoost_grid__1_AutoML_20210727_081519_model_5
 
 
 Model Summary: 
- | number_of_trees|
--|--|
-0| 	|	107.0|
+    number_of_trees
+0   107.0
 
 ModelMetricsRegression: xgboost
 ** Reported on train data. **
